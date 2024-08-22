@@ -8,14 +8,13 @@
 <body>
     <form action="https://formspree.io/f/mgvwyyde" method="post">
     <p>digite seu nome:</p>
-    <input type="text" name="nome" placeholder="Ex: Lucas ">
+    <input type="text" name="nome" placeholder="Ex: Lucas " required>
         <br>
+        <p>Digite seu email:</p>
     <input type="email" name="email" placeholder="Ex xxxxxx@escola.pr.gov.br" required>
     <br>
-    <input type="number" name="phome" placeholder="(XX) XXXXX-XXXX " required>
-    <br>
     <p>Você trabalha?</p>
-    <input type="radio" name="work" value="Sim"> Sim
+    <input type="radio" name="work" value="Sim" checked> Sim
     <input type="radio" name="work" value="Não"> Não 
     <br>
     <select name="estado" id="" required>
@@ -34,6 +33,7 @@
         </select>
       </p>
        <br>
+       <p>Reclame aqui:</p>
        <textarea name="feedback" id="" placeholder="Reclame aqui"></textarea>
        <br>
        <input type="checkbox" name="novidades" checked> Aceita receber novidades da empresa?
